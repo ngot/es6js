@@ -1,0 +1,22 @@
+{
+  "name": "es6js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ngot/es6js",
+  "authors": [
+    "Hengfei Zhuang <zhuanghengfei@gmail.com>"
+  ],
+  "description": "es6",
+  "main": "src/index.js",
+  "keywords": [
+    "es6",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

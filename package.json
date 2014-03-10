@@ -1,0 +1,23 @@
+{
+  "name": "es6js",
+  "version": "0.0.1",
+  "description": "es6",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "make run-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngot/es6js.git"
+  },
+  "keywords": [
+    "es6",
+    "js"
+  ],
+  "author": "ngot",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ngot/es6js/issues"
+  },
+  "homepage": "https://github.com/ngot/es6js"
+}
