@@ -1,5 +1,10 @@
 (function(){
 	'use strict';
+
+	/**
+	 * Array
+	 */
+
 	//isArray
 	if(!Array.isArray) {
 		Array.isArray = function (vArg) {
@@ -251,5 +256,41 @@
 			return false;
 		};
 	}
+
+	/**
+	 * Date
+	 */
+
+	//now
+	if (!Date.now) {
+		Date.now = function now() {
+			return new Date().getTime();
+		};
+	}
+
+	//toISOString
+	if(!Date.prototype.toISOString) {
+		( function() {
+			function pad(number) {
+				if ( number < 10 ) {
+					return '0' + number;
+				}
+				return number;
+			}
+
+			Date.prototype.toISOString = function() {
+				return this.getUTCFullYear() +
+				'-' + pad( this.getUTCMonth() + 1 ) +
+				'-' + pad( this.getUTCDate() ) +
+				'T' + pad( this.getUTCHours() ) +
+				':' + pad( this.getUTCMinutes() ) +
+				':' + pad( this.getUTCSeconds() ) +
+				'.' + (this.getUTCMilliseconds() / 1000).toFixed(3).slice( 2, 5 ) +
+				'Z';
+			};
+		}());
+	}
+
+	
 
 })();
